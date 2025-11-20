@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday 💜</title>
+    <title>Happy Birthday Karabo💜</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @keyframes float {
@@ -54,34 +54,34 @@
             { 
                 code: 'BUBUNU', 
                 location: 'Under your driver\'s seat 🚗',
-                message: 'Your first surprise is waiting right where you sit every day...'
+                message: 'Your first surprise is waiting right where you sit every day(technically i sit there)...'
             },
             { 
                 code: 'JOLOVESU', 
                 location: 'Come to Jo\'s workplace 💼',
-                message: 'Time for a little trip! Your next gift is waiting at Jo\'s work...'
+                message: 'Time for a little trip! Your next gift is waiting at Joey\'s office...'
             },
             { 
                 code: 'TWENTY1', 
-                location: 'Ask Jesus and Enrique 🙏',
+                location: 'The next gift is going to be at the ground house',
                 message: 'The next clue requires some help from friends...'
             },
             { 
                 code: 'ALLABOUTU', 
-                location: 'Find Jordan and tell him "Jesus Loves Us" ✝️',
-                message: 'Jordan has something special for you, but you need to say the magic words...'
+                location: 'Find Asia ASAP and tell her "IT\'s my Birthday!!!" ',
+                message: 'Jordan gave her something special for you but you need to say the magic words...'
             },
             { 
                 code: 'PRINCESSK', 
-                location: 'That\'s it for the games...no more secrets 💝',
+                location: 'That\'s it for the games...no more secrets 💝, make sure to find Jo',
                 message: 'You did it! The treasure hunt is complete, Princess! 👑'
             }
         ];
 
         const birthdayQuotes = [
-            "In your eyes, I found my home. In your heart, I found my love. Happy Birthday, darling.",
-            "Every moment with you is a treasure. Today, we celebrate the most precious one of all—you.",
-            "You are the elegance in my chaos, the grace in my days. Happy Birthday, my love.",
+            "In your eyes, I found my home. In your heart, I found my love. Happy Birthday, Baby.",
+            "Every moment with you is a treasure. I celebrate the most precious girl of all—you.",
+            "You are the elegance in my chaos, the joy in my days. Happy Birthday, my love.",
         ];
 
         // State
@@ -219,14 +219,13 @@
                                     <label class="block text-purple-200 font-light mb-4 text-lg tracking-wide">
                                         Enter Your Secret Code
                                     </label>
-                                    <div class="flex gap-4">
-                                        <input type="text" id="codeInput" value="${currentCode}"
-                                               class="flex-1 px-6 py-4 bg-black/40 border border-purple-500/30 rounded-xl focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500/20 text-lg text-purple-100 uppercase tracking-widest placeholder-purple-400/40 font-light backdrop-blur-sm"
-                                               placeholder="ENTER CODE" maxlength="15">
-                                        <button onclick="handleCodeSubmit()" class="bg-gradient-to-r from-purple-600 to-purple-500 text-white px-10 py-4 rounded-xl font-light tracking-wide hover:shadow-lg hover:shadow-purple-500/40 transform hover:scale-[1.02] transition-all duration-300 border border-purple-400/30">
-                                            Unlock
-                                        </button>
-                                    </div>
+                                    <input type="text" id="codeInput" value="${currentCode}"
+                                           class="w-full px-6 py-4 bg-black/40 border border-purple-500/30 rounded-xl focus:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500/20 text-lg text-purple-100 uppercase tracking-widest placeholder-purple-400/40 font-light backdrop-blur-sm mb-4"
+                                           placeholder="ENTER CODE" maxlength="15">
+                                    <button onclick="handleCodeSubmit()" class="w-full bg-gradient-to-r from-purple-600 to-purple-500 text-white px-10 py-5 rounded-xl font-light text-xl tracking-wide hover:shadow-lg hover:shadow-purple-500/40 transform hover:scale-[1.02] transition-all duration-300 border border-purple-400/30 flex items-center justify-center gap-2">
+                                        <span>Enter</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                                    </button>
                                     ${error ? `<p class="text-purple-300 mt-4 text-center font-light italic">${error}</p>` : ''}
                                 </div>
                             ` : ''}
